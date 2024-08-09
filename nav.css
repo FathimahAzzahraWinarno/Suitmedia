@@ -1,0 +1,141 @@
+
+
+#logo {
+    width: 80px;
+    height: 50px;
+}
+
+.navbar {
+    background-color: #ff6600;
+    box-shadow: 0 0 15px #ba7649;
+  }
+  
+  
+  .navbar-nav .nav-item {
+    font-size: 17px;
+    text-decoration: none;
+    margin: 0px 20px 0px 20px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Efek hover pada setiap item menu */
+  .navbar-nav .nav-item a:hover {
+    background-color: #f5bc97; /* Warna latar belakang saat di-hover */
+    color: #fff; /* Warna teks saat di-hover */
+    transition: background-color 0.3s, color 0.3s; /* Animasi perubahan warna */
+    border-radius: 8px;
+  }
+  
+  /* Efek saat item menu di-klik (active) */
+  .navbar-nav .nav-item a:active {
+    background-color: #d17a40; /* Warna latar belakang menjadi lebih gelap saat di-klik */
+    border-radius: 8px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.slanted-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: skewY(-6deg);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.image-container::after {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background: white;
+    transform: skewY(-5deg);
+    transform-origin: bottom left;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.toolbar .info {
+    font-size: 15px;
+}
+
+.toolbar .controls {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar .controls select {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.card {
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 0 0 19px #e7d2b0;
+}
+
+.card-text {
+    font-weight: bold;
+    color:#333;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination a.active {
+    background-color: orange;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
